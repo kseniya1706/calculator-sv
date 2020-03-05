@@ -1,0 +1,123 @@
+.popup {
+    width: 485px;
+    height: 531px;
+    margin: 35px auto 0 ;
+    padding: 28px;
+    border-radius: 5px;
+    border: 1px none #000000;
+    box-shadow: 0px 10px 25px 4px rgba( 2, 2, 2, 0.50 );
+    background-color: rgba( 255, 255, 255, 1.00 );
+    font-family: Roboto;
+}
+
+.product-calculator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.product-calculator__image {
+    width: 80px;
+    height: 80px;
+}
+
+.product-calculator__dscription {
+    width: 110px;
+}
+
+.product-calculator__quantity { 
+    width: 150px;
+}
+
+.product-calculator-quantity__input {
+    width: 50px;
+    height: 18px;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 5px;
+    
+}
+
+.product-calculator-quantity__btn {
+    width: 25px;
+    text-align: center;
+    background-color: #999999;
+    color: #ffffff;
+    border: 2px solid #999999;
+}
+
+.product-calculator-quantity-btn__increment {
+    border-radius: 0 5px 5px 0;
+}
+
+.product-calculator-quantity-btn__decrement {
+    border-radius: 5px 0 0 5px;
+}
+
+.product-calculator__cost {
+    width: 105px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;   
+}
+
+.product-calculator__cost > div:first-child {
+    font-weight: 700;
+}
+
+.product-types-buttons__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: safe center;
+}
+.product-types-buttons__btn {
+    width: 155px;
+    height: 30px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 11px;
+    color: #000000;
+    background-color: #cccccc;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.pressed {
+    color: #ffffff;
+    background-color: #4b4b4b;
+}
+.add-to-order {
+    display: flex;
+    justify-content: flex-end;
+}
+.add-to-order__btn{
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #f7cbcb;
+    border: 1px solid #f7cbcb;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.my-textarea {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+}
+
+@font-face {
+    font-family: "Roboto"; 
+    src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
+}

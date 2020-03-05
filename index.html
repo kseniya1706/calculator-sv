@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "popup">
+        <div class = "product-calculator">
+            <div  class = "product-calculator__image">
+            <img src="./assets/images/provolka_svarkagroup_180.jpg" width="80px" height="80px">
+            </div>
+            <div class = "product-calculator__dscription">ТМ «Stream» ER70S-6</div>
+            <div class = "product-calculator__quantity">
+                <button class = "product-calculator-quantity__btn product-calculator-quantity-btn__decrement">&ndash;</button>
+                <input type = "text" class = "product-calculator-quantity__input" value="5">  
+                <button  class = "product-calculator-quantity__btn product-calculator-quantity-btn__increment">+</button>
+            </div>
+            <div class = "product-calculator__cost">
+                <div>Итого:</div>
+                <div class = "product-calculator-cost-result">16.95 бел.руб.</div>
+                <div>без НДС</div>
+            </div>
+        </div>
+
+        <div class = "product-types-buttons__div">
+            <button class = "product-types-buttons__btn pressed" name = "1" id = "product-types-buttons__btn1">0.8 mm, 3.39 руб./кг, (5 кг) </button>
+            <button class = "product-types-buttons__btn" name = "2"  id = "product-types-buttons__btn2">0.8 mm, 3.03 руб./кг (15 кг)</button>
+            <button class = "product-types-buttons__btn" name = "3"  id = "product-types-buttons__btn3">1.0 mm, 2.76 руб./кг (15 кг)</button>
+            <button class = "product-types-buttons__btn" name = "4"  id = "product-types-buttons__btn4">1.2 mm, 3.03 руб./кг (5 кг)</button>
+            <button class = "product-types-buttons__btn" name = "5"  id = "product-types-buttons__btn5">1.2 mm, 2.77 руб./кг (15 кг)</button>
+        </div>
+        <div class = "add-to-order">
+        <button class = "add-to-order__btn">Добавить в заявку</button>
+      </div>
+        <textarea class = "my-textarea">ТМ «Stream» ER70S-6</textarea>
+
+        </textarea>
+
+    </div>
+</body>
+<script src="assets/js/index.js"></script>
+</html>
