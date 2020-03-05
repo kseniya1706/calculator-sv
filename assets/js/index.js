@@ -34,7 +34,6 @@ document.querySelector('.product-types-buttons__div').addEventListener('mousedow
 document.querySelector(".add-to-order__btn").addEventListener('mousedown', () => mousedownAddToOrder());
 
 
-
 function mousedownAddToOrder() {
     let txt = `${btns[btnIndex].diametr}mm, ${btns[btnIndex].price} руб./кг (${btns[btnIndex].weight}кг)`;
     document.querySelector('.my-textarea').value += ` \n${txt} -  ${quantity} кг. - ${resultCost}`  ;
@@ -52,6 +51,19 @@ function mousedownWeight(event) {
      calcResultCost(btns[btnIndex].price);
      
 }
+// недописанная ф-я ввода количества кг с клавиатуры
+// не пересчитывет Итоговую сумму и разрешает ввод букв
+
+// document.querySelector('.product-calculator-quantity__input').addEventListener('mousedown', () => manualInputWeight(event));
+// function manualInputWeight(event) {
+
+//     if ((event.keyCode < 48 || event.keyCode > 57) || (event.keyCode < 96 || event.keyCode > 105)) {
+//         return false;
+//     } else {
+//         quantity = document.querySelector('.product-calculator-quantity__input').value;
+//     }
+//     calcResultCost(btns[btnIndex].price);
+// }
 
 function mousedownProductButtons(event) {
     btnIndex = getBtnIndex(event);
